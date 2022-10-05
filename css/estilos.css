@@ -1,0 +1,224 @@
+body {
+    background-color: rgb(10, 10, 10);
+    font-family: 'Josefin Slab', serif;
+    margin: 0em;
+    color: rgb(255, 255, 255);
+
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "menu"
+    "main"
+    "footer"
+    ;
+}
+
+header {
+
+    background-color: rgb(231, 103, 196);
+    grid-area: header;
+    display: grid;
+    
+    grid-template-areas:
+    "logo h1 botonwa"
+    ; 
+    align-items: center;
+    justify-content: start;
+    grid-template-columns: 10% 70% 20%;
+    
+
+}
+
+
+
+#logo {
+    grid-area: logo;
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+    overflow: visible;
+    
+}
+
+h1 {
+    grid-area: h1;
+}
+
+#botonwa {
+    grid-area: botonwa;
+    justify-self: right;
+    margin-right: 1rem;
+}
+
+
+
+#wa {
+    
+    width: 5rem;
+    height: 5rem;
+    overflow: visible;
+    
+  
+}
+
+.menu {
+    padding: 0px;
+    background-color: rgb(227, 78, 78);
+    font-size: 1.5em;
+    margin: 3px;
+
+    top: 0;
+    z-index: 2;
+
+    grid-area: menu;
+
+
+
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.items {
+    padding: 0px;
+    list-style-type: none;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+li {
+    padding-left: .2rem;
+    padding-right: .2rem;
+   
+}
+
+
+main{
+
+    background: linear-gradient(rgb(132, 132, 47) 20%, rgb(40, 40, 40) 50%, rgb(221, 200, 63) 90%);
+    grid-area: main;
+    
+}
+
+
+h2 {
+    margin: 2rem;
+    padding: 0;
+    text-align: center;
+    }
+
+.container {
+        display: grid;
+        grid-template-columns: 5fr 5fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 4rem;
+        margin: 4rem;
+        align-items: start;
+        justify-items: center;
+        justify-content: stretch;
+        align-content: stretch;
+
+    }
+    
+
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.8em;
+    font-style: italic;
+    font-weight:200;
+    text-align:justify;
+    justify-content: center;
+}
+
+
+
+footer {
+    
+    background-image: "img/wave.svg";
+    grid-area: footer;
+    
+}
+
+footer p {
+    font-size: 1.2em;
+    font-style: normal;
+    padding: 2rem;
+   
+}
+
+
+.pintro {
+    margin: 2em;
+    text-align: center;
+}
+
+.flecha {
+    padding: 0px;
+    margin: 0px;
+    width: 20px;
+    height: 370px;
+    position: relative;
+    top: 110px;
+    left: 9px;
+}
+
+.elemento5 {
+    padding: 0px;
+    margin: 0px;
+    
+}
+.elemento6 {
+    padding: 0px;
+    margin: 0px;
+}
+
+#wa1 {
+    
+    width: 8%;
+    height: 8%;
+    position: relative;
+    margin-left: 46%;
+    z-index: 1;
+
+}
+
+
+#form {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    header {
+        grid-template-columns: 23% 57% 20%;
+            
+    }
+}
+
+
+
+@media screen and (max-width: 425px) {
+    header {
+  
+    display: flex; 
+    flex-direction: column;
+   
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2,5rem;
+        font-weight:500;
+    }
+
+}
