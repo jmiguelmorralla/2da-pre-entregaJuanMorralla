@@ -14,9 +14,14 @@ body {
 }
 
 header {
-
-    background-color: rgb(231, 103, 196);
     grid-area: header;
+    background-color: rgb(231, 103, 196);
+}
+
+#headerl {
+
+
+
     display: grid;
     
     grid-template-areas:
