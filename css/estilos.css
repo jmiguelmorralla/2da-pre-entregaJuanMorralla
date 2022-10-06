@@ -59,11 +59,6 @@ h1 {
 }
 
 
-
-
-
-
-
 main{
 
     background: linear-gradient(rgb(132, 132, 47) 20%, rgb(40, 40, 40) 50%, rgb(221, 200, 63) 90%);
@@ -77,20 +72,6 @@ h2 {
     padding: 0;
     text-align: center;
     }
-
-.container {
-        display: grid;
-        grid-template-columns: 5fr 5fr;
-        grid-column-gap: 2rem;
-        grid-row-gap: 4rem;
-        margin: 4rem;
-        align-items: start;
-        justify-items: center;
-        justify-content: stretch;
-        align-content: stretch;
-
-    }
-    
 
 p {
     padding: 0;
@@ -155,33 +136,8 @@ footer p {
 }
 
 
-#form {
-    margin-left: 40%;
-    margin-right: 40%;
-}
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 768px) {
-    header {
-        grid-template-columns: 23% 57% 20%;
-            
-    }
-}
 
 
 
-@media screen and (max-width: 425px) {
-    header {
-  
-    display: flex; 
-    flex-direction: column;
-   
-    }
-
-    h1 {
-        text-align: center;
-        font-size: 2,5rem;
-        font-weight:500;
-    }
-
-}
