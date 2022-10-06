@@ -57,8 +57,21 @@ h1 {
 
 .navbar-brand {
     margin-right: 3rem !important;
+    color: white;
 }
 
+.navbar {
+    background-color: rgb(235,131,221);
+}
+
+.nav-link {
+    color: white;
+}
+
+.active {
+    font-weight: bold;
+    color: white;
+}
 
 main{
 
