@@ -7,7 +7,6 @@ body {
     display: grid;
     grid-template-areas: 
     "header"
-    "menu"
     "main"
     "footer"
     ;
@@ -15,26 +14,18 @@ body {
 
 header {
     grid-area: header;
-    background-color: rgb(231, 103, 196);
+    background-color: rgb(235, 131, 221);
 }
 
 #headerl {
-
-
-
     display: grid;
-    
     grid-template-areas:
     "logo h1 botonwa"
     ; 
     align-items: center;
     justify-content: start;
     grid-template-columns: 10% 70% 20%;
-    
-
 }
-
-
 
 #logo {
     grid-area: logo;
@@ -42,7 +33,6 @@ header {
     height: 8rem;
     margin: 1rem;
     overflow: visible;
-    
 }
 
 h1 {
@@ -61,49 +51,17 @@ h1 {
     
     width: 5rem;
     height: 5rem;
-    overflow: visible;
-    
-  
+    overflow: visible; 
 }
 
-.menu {
-    padding: 0px;
-    background-color: rgb(227, 78, 78);
-    font-size: 1.5em;
-    margin: 3px;
-
-    top: 0;
-    z-index: 2;
-
-    grid-area: menu;
-
-
-
+.navbar-brand {
+    margin-right: 3rem !important;
 }
 
 
-a {
-    text-decoration: none;
-    color: white;
-
-}
 
 
-.items {
-    padding: 0px;
-    list-style-type: none;
-   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
 
-}
-
-li {
-    padding-left: .2rem;
-    padding-right: .2rem;
-   
-}
 
 
 main{
