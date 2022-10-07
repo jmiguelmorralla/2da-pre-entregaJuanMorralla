@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(235, 131, 221);
     font-family: 'Josefin Slab', serif;
     margin: 0em;
     width: 100%;
@@ -26,6 +26,9 @@ header {
     align-items: center;
     justify-content: start;
     grid-template-columns: 10% 70% 20%;
+
+    max-width: 1320px;
+    margin: auto;
 }
 
 #logo {
@@ -75,7 +78,7 @@ h1 {
 
 main{
 
-    background: linear-gradient(rgb(132, 132, 47) 20%, rgb(40, 40, 40) 50%, rgb(221, 200, 63) 90%);
+    background-color: rgb(235,131,221)
     grid-area: main;
     
 }
@@ -103,13 +106,16 @@ footer {
     
     background-image: "img/wave.svg";
     grid-area: footer;
-    
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;    
 }
 
 footer p {
-    font-size: 1.2em;
+    font-size: 1.6em;
     font-style: normal;
-    padding: 2rem;
+    padding-top: 2rem;
+
    
 }
 
