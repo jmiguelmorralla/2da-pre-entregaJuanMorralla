@@ -18,49 +18,18 @@ header {
     background-color: rgb(118, 115, 111);
 }
 
-#headerl {
-    display: grid;
-    grid-template-areas:
-    "logo h1 botonwa"
-    ; 
-    align-items: center;
-    justify-content: start;
-    grid-template-columns: 10% 70% 20%;
-
-    max-width: 1320px;
-    margin: auto;
-}
-
-#logo {
-    grid-area: logo;
-    width: 8rem;
-    height: 8rem;
-    margin: 1rem;
-    overflow: hidden;
-}
-
 h1 {
-    grid-area: h1;
+    font-size: 1.3rem;
+    margin: 0;
 }
 
-#botonwa {
-    grid-area: botonwa;
-    justify-self: right;
-    margin-right: 1rem;
-}
-
-
-
-#wa {
-    
-    width: 5rem;
-    height: 5rem;
-    overflow: visible; 
-}
 
 .navbar-brand {
     margin-right: 3rem !important;
     color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .navbar {
@@ -84,8 +53,10 @@ h1 {
 }
 
 main{
-
-    margin: 1rem;
+    margin-top: 110px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
     background-color: rgb(235,131,221)
     grid-area: main;
     
@@ -96,6 +67,7 @@ h2 {
     margin: 2rem;
     padding: 0;
     text-align: center;
+    position: relative;
     }
 
 p {
@@ -116,6 +88,17 @@ p {
     width: 100%; 
     height: 100%;
  
+}
+
+a {
+    color: white;
+}
+
+#botonwa {
+    position: sticky;
+    bottom: 20px;
+    right: 20px;
+    justify-items: right;
 }
 
 footer {
