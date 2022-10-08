@@ -18,6 +18,11 @@ header {
     background-color: rgb(118, 115, 111);
 }
 
+#logo {
+    width: 85px; 
+    height: 85px;
+}
+
 h1 {
     font-size: 1.8rem;
     margin: 0;
@@ -57,7 +62,7 @@ main{
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    background-color: rgb(235,131,221)
+
     grid-area: main;
     
 }
@@ -87,12 +92,11 @@ p {
 .multimedia {
     width: 100%; 
     height: 100%;
- 
 }
 
 a {
     color: white;
-    text-decoration: none;   
+    text-decoration: none;
 }
 
 footer {
@@ -110,12 +114,13 @@ footer {
 footer p {
     font-size: 1.6em;
     font-style: normal;
-
   
 }
 
 .icon {
     margin: 0.5rem;
+    height: 3rem;
+    width: 3rem;
     transition-property: all;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
@@ -156,25 +161,49 @@ footer p {
 
 }
 
-
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 576px) {
-    h1 {
-        font-size: 1rem;
-
-    }
-};
-
-
-
 /* TRANSICIONES */
 
 .icon:hover {
     transform: scale(2);
     transform: rotateY(360deg);
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    #logo {
+        width: 65px; 
+        height: 65px;
+    }
+    
+    footer p {
+        font-size: 1em;   
+    }
+    .icon {
+    margin: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+    }
+};
+
+@media screen and (max-width: 992px) {
+
+    
+    footer p {
+        font-size: 1.3em;
+   
+      
+    }
+};
+
+
+
+
 
 
 
