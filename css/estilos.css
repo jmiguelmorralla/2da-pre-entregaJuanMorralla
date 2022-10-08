@@ -19,15 +19,14 @@ header {
 }
 
 #logo {
-    width: 85px; 
-    height: 85px;
+    width: 85; 
+    height: 85;
 }
 
 h1 {
     font-size: 1.8rem;
     margin: 0;
 }
-
 
 .navbar-brand {
     margin-right: 3rem !important;
@@ -41,7 +40,6 @@ h1 {
     background-color: rgb(203, 126, 193);
     padding-top: 5px !important;
     padding-bottom: 5px !important;
-
 }
 
 .nav-link {
@@ -62,11 +60,8 @@ main{
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-
     grid-area: main;
-    
 }
-
 
 h2 {
     margin: 2rem;
@@ -175,7 +170,11 @@ footer p {
         font-size: 1rem;
     }
 
-    
+    #logo {
+        width: 65; 
+        height: 65;
+    }
+
     footer p {
         font-size: 1em;   
     }
