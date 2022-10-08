@@ -19,7 +19,7 @@ header {
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 1.8rem;
     margin: 0;
 }
 
@@ -92,13 +92,14 @@ p {
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 #botonwa {
     position: sticky;
     bottom: 20px;
     right: 20px;
-    justify-items: right;
+    justify-self: right;
 }
 
 footer {
