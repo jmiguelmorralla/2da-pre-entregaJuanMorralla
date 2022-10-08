@@ -92,14 +92,7 @@ p {
 
 a {
     color: white;
-    text-decoration: none;
-}
-
-#botonwa {
-    position: sticky;
-    bottom: 20px;
-    right: 20px;
-    justify-self: right;
+    text-decoration: none;   
 }
 
 footer {
@@ -109,16 +102,24 @@ footer {
     width: 100%;
     max-width: 1320px;
     margin: auto;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 footer p {
     font-size: 1.6em;
     font-style: normal;
-    padding-top: 2rem;
 
-   
+  
 }
 
+.icon {
+    margin: 0.5rem;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
 
 .pintro {
     margin: 2em;
@@ -158,6 +159,22 @@ footer p {
 
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 1rem;
+
+    }
+};
+
+
+
+/* TRANSICIONES */
+
+.icon:hover {
+    transform: scale(2);
+    transform: rotateY(360deg);
+}
 
 
 
