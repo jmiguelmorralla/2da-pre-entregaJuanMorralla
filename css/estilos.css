@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(235, 131, 221);
+    background-color: rgb(118, 115, 111);
     font-family: 'Josefin Slab', serif;
     margin: 0em;
     width: 100%;
@@ -15,7 +15,7 @@ body {
 
 header {
     grid-area: header;
-    background-color: rgb(235, 131, 221);
+    background-color: rgb(118, 115, 111);
 }
 
 #headerl {
@@ -64,7 +64,7 @@ h1 {
 }
 
 .navbar {
-    background-color: rgb(235,131,221);
+    background-color: rgb(203, 126, 193);
 
 }
 
