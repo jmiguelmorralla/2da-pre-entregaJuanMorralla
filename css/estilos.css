@@ -18,11 +18,12 @@ header {
     background-color: rgb(118, 115, 111);
 }
 
-
 h1 {
     font-size: 1.8rem;
     margin: 0;
 }
+
+
 
 .navbar-brand {
     margin-right: 3rem !important;
@@ -30,6 +31,7 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    pointer-events:none
 }
 
 .navbar {
@@ -122,24 +124,10 @@ footer p {
     text-align: center;
 }
 
-.flecha {
-    padding: 0px;
-    margin: 0px;
-    width: 20px;
-    height: 370px;
-    position: relative;
-    top: 110px;
-    left: 9px;
-}
-
-.elemento5 {
-    padding: 0px;
-    margin: 0px;
-    
-}
-.elemento6 {
-    padding: 0px;
-    margin: 0px;
+#flecha {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 #wa1 {
@@ -159,18 +147,28 @@ footer p {
     transform: rotateY(360deg);
 }
 
+/* ANIMACIONES */
+/* 
+@keyframes flecha {
+    0% {}
+} */
+
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
+    body {
+        font-size: small;
+    }
+    
     h1 {
         font-size: 1rem;
     }
 
-
-
     footer p {
         font-size: 1em;   
     }
+
     .icon {
     margin: 0.5rem;
     height: 2rem;
@@ -183,8 +181,7 @@ footer p {
     
     footer p {
         font-size: 1.3em;
-   
-      
+
     }
 };
 
