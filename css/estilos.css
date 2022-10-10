@@ -149,7 +149,6 @@ div .pintro {
 }
 
 #wa1 {
-
     margin: auto;
     transition-property: all;
     transition-duration: 1s;
@@ -203,14 +202,15 @@ div .pintro {
         font-size: 1rem;
     }
 
-    footer p {
+    footer {
         font-size: 1em;   
+        flex-direction: column;
     }
 
     .icon {
         margin: 0.5rem;
-        height: 2rem;
-        width: 2rem;
+        height: 1.5rem;
+        width: 1.5rem;
     }
 
     .pintro {
