@@ -5,6 +5,7 @@ body {
     width: 100%;
     color: rgb(255, 255, 255);
 
+
     display: grid;
     grid-template-areas: 
     "header"
@@ -58,6 +59,7 @@ main{
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    padding-bottom: 3rem;
     grid-area: main;
 }
 
@@ -119,16 +121,32 @@ footer p {
     transition-timing-function: ease-in-out;
 }
 
-.pintro {
-    margin: 2em;
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1320px;
+    margin-bottom: 2rem;
+}
+
+div .pintro {
+
     text-align: center;
 }
 
 #flecha {
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    padding-left: 5%;
+    animation-name: giro-flecha;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.col-sm-12 {
+    align-self: center;
+}
+
+.col-md-2 {
+    padding: 6%;
 }
 
 #wa1 {
@@ -149,10 +167,16 @@ footer p {
 }
 
 /* ANIMACIONES */
-/* 
-@keyframes flecha {
-    0% {}
-} */
+
+@keyframes giro-flecha {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
 
 /* MEDIA QUERIES */
@@ -175,6 +199,12 @@ footer p {
     height: 2rem;
     width: 2rem;
     }
+
+    .pintro {
+        margin: 1rem;
+  
+    }
+
 };
 
 @media screen and (max-width: 992px) {
